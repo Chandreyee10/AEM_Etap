@@ -43,9 +43,13 @@ public class SignInPage extends AemAuthorPage<SignInPage>{
 	      loginTextbox.sendKeys(username);
 	      passwordTextBox.sendKeys(password);
 	      loginButton.click();
+	      return true;
 		}
 		else
-			log.info("User Id and Password are not valid");
+		{	
+		    log.info("User Id and Password are not valid");
+		    return false;
+		}
 	  }
 
 	}
