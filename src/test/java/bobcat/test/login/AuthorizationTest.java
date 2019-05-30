@@ -19,6 +19,8 @@ import io.qameta.allure.Story;
 import test.bobcat.pages.SignInPage;
 import test.bobcat.pages.TestPage;
 
+import java.util.logging.Logger;
+
 /**
  * Test for presenting how to log in to the page.
  */
@@ -26,7 +28,6 @@ import test.bobcat.pages.TestPage;
 @Epic("AEM 6.4 Base Tests")
 @Feature("Login to AEM")
 public class AuthorizationTest { 
-	
 	 
 	@Inject
 	private ActionsController controller;
@@ -39,11 +40,7 @@ public class AuthorizationTest {
 	@Story("Login to AEM and open Test page")
 	@Description("Login to author instance and open test page")
 	public void loginTest() throws ActionException {
-		//TestPage testpage = bobcatPageFactory.create("/content/etap/en/homepage.html", TestPage.class);
-		/* Login to Author instance and opening the Home Page */
-		/*TestPage testpage = bobcatPageFactory.create("/content/we-retail/us/en.html", TestPage.class);
-		controller.execute(AemActions.LOG_IN);
-		assertTrue(testpage.open().isDisplayed());*/
+		Logger log= Logger.getAnonymousLogger();
 		
 		/*Code for Login Page start */
 		SignInPage signinpage = bobcatPageFactory.create("/content/etap/LoginPage.html", SignInPage.class);
@@ -56,26 +53,22 @@ public class AuthorizationTest {
 		}
 		
 		//signinpage.open().login("admin","admin");
-		signinpage.open().login("chandreyee","chandreyee");
-		TestPage testpage = bobcatPageFactory.create("/content/etap/en/homepage.html", TestPage.class);
-		try {
+		Boolean flag=signinpage.login("11", "admin1");
+		if (flag==true) {
+		    TestPage testpage = bobcatPageFactory.create("/content/etap/en/homepage.html", TestPage.class);
+		    try {
 			Thread.sleep(10000);
 			}
 			catch(Exception e) {
 				
 			}
-		assertTrue(testpage.open().isDisplayed());
+		    assertTrue(testpage.open().isDisplayed());
 		/*Code for Login Page end */
 	    
-		/*Code for Registartion Page start */
-		/*SignInPage signinpage = bobcatPageFactory.create("/content/etap/LoginPage.html", SignInPage.class);
-		controller.execute(AemActions.LOG_IN);
-		signinpage.open().login("admin","admin");
-		TestPage testpage = bobcatPageFactory.create("/content/etap/en/homepage.html", TestPage.class);
-		assertTrue(testpage.open().isDisplayed());*/
-		/*Code for Login Page end */
-	
-		
+		}
+		else
+			//signinpage.open().login("chandreyee", "chandreyee");
+		    log.info("Credentials entered are incorrect");
 	
 		
 	}
