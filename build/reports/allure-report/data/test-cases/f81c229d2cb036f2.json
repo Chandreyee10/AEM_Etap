@@ -1,0 +1,103 @@
+{
+  "uid" : "f81c229d2cb036f2",
+  "name" : "loginTest()",
+  "historyId" : "e00661258f2994e1521ed31594835520",
+  "time" : {
+    "start" : 1559140452485,
+    "stop" : 1559140494289,
+    "duration" : 41804
+  },
+  "description" : "Login to author instance and open test page",
+  "descriptionHtml" : "<p>Login to author instance and open test page</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Login to author instance and open test page",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Logging in to AEM",
+      "time" : {
+        "start" : 1559140452589,
+        "stop" : 1559140459488,
+        "duration" : 6899
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Open page",
+      "time" : {
+        "start" : 1559140469497,
+        "stop" : 1559140479038,
+        "duration" : 9541
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Open page",
+      "time" : {
+        "start" : 1559140489077,
+        "stop" : 1559140493066,
+        "duration" : 3989
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test.bobcat.login.AuthorizationTest"
+  }, {
+    "name" : "package",
+    "value" : "test.bobcat.login.AuthorizationTest"
+  }, {
+    "name" : "epic",
+    "value" : "AEM 6.4 Base Tests"
+  }, {
+    "name" : "feature",
+    "value" : "Login to AEM"
+  }, {
+    "name" : "story",
+    "value" : "Login to AEM and open Test page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f81c229d2cb036f2.json",
+  "parameterValues" : [ ]
+}

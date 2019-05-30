@@ -1,0 +1,21 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test.bobcat.login.AuthorizationTest",
+    "children" : [ {
+      "name" : "loginTest()",
+      "uid" : "f81c229d2cb036f2",
+      "parentUid" : "b7c1bedb333a4e358febaf8cc023c3ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1559140452485,
+        "stop" : 1559140494289,
+        "duration" : 41804
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b7c1bedb333a4e358febaf8cc023c3ac"
+  } ]
+}
